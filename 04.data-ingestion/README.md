@@ -1,5 +1,4 @@
 # Data Ingestion
 
-We talk tools Azure provides for Data Ingestion, Data Transformation, and Data Orchestration.
-
+We talk about tools Azure provides for integrating data from multiple sources and prepare it for further analysis.
 
