@@ -136,23 +136,11 @@ if __name__ == "__main__":
                      'DateOut', 'DateIn'], encoding="UTF-16 LE", sep=';', quotechar='"', error_bad_lines=False)
     print("Read data", len(df))
 
-    # Filter data
-    df["fTransmis"] = df["fTransmis"].transform(
-        lambda x: "M" if x == "S" else "A")
-    print("Transformed transmis data", len(df))
-
-    # TODO: Drop where fueltype is E or H
-    df.drop(df[df.FuelType == "E"].index, inplace=True)
-    print("dropped fueltype E", len(df))
-
-    df.drop(df[df.FuelType == "H"].index, inplace=True)
-    print("dropped fueltype H", len(df))
-
     # Data before 2000 are not valuable, removing cars returned before 2000
-    # i.e. in 2000 were occupied
     df.drop(df[df.DateIn < datetime(2000, 1, 1)].index, inplace=True)
     print("dropped datein before 2000-01-01", len(df))
 
+    # Drop missing values
     df = df.dropna()
     print("dropped na; filtered data", len(df))
 
