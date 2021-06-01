@@ -1,0 +1,35 @@
+version: "3.8"
+services:
+    simple:
+        image: proge/wss-bot:simple-${WSS_VRS:-latest}
+        build:
+            dockerfile: build/docker/04.simple-bot/Dockerfile
+            context: .
+        volumes:
+            - ./cmd/04.simple-bot/.env:/.env:rw
+            - ./cmd/04.simple-bot/.env.development:/.env.development:rw
+    vision:
+        image: proge/wss-bot:vision-${WSS_VRS:-latest}
+        build:
+            dockerfile: build/docker/05.vision-bot/Dockerfile
+            context: .
+        volumes:
+            - ./cmd/05.vision-bot/.env:/.env:rw
+            - ./cmd/05.vision-bot/.env.development:/.env.development:rw
+    lang:
+        image: proge/wss-bot:lang-${WSS_VRS:-latest}
+        build:
+            dockerfile: build/docker/06.lang-bot/Dockerfile
+            context: .
+        volumes:
+            - ./cmd/06.lang-bot/.env:/.env:rw
+            - ./cmd/06.lang-bot/.env.development:/.env.development:rw
+    moderate:
+        image: proge/wss-bot:moderate-${WSS_VRS:-latest}
+        build:
+            dockerfile: build/docker/07.moderate-bot/Dockerfile
+            context: .
+        volumes:
+            - ./cmd/07.moderate-bot/.env:/.env:rw
+            - ./cmd/07.moderate-bot/.env.development:/.env.development:rw
+     
