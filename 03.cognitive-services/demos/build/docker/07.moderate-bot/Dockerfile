@@ -1,7 +1,7 @@
 ############################
 # STEP 1 build executable binary
 ############################
-FROM golang:1.14.1-buster as builder
+FROM golang:1.16.4-buster as builder
 
 # Ensure ca-certficates are up to date
 RUN update-ca-certificates
