@@ -21,7 +21,7 @@ We talk about tools Azure provides for integrating data from multiple sources an
      - IoT
      - NLP
      - Spark
-1. [Azure and microsoft resources](03.azure-cognitive-services.md) :clock1230: **(00:30)**
+1. [Azure and microsoft resources](03.azure-microsoft-resources.md) :clock1230: **(00:30)**
    - Main resources
      - Azure Data Factory
      - Data Lake, blob storage
