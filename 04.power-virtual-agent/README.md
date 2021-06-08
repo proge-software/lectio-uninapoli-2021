@@ -12,7 +12,7 @@ We talk about how to create a chatbot by using Power Virtual Agent and QnA Maker
    - What is Power Virtual Agent
    - Introduction to Environments
    - Power Virtual Agent Components
-3. [Create your First Bot](02.introduction.md) **(11:15)**
+3. [Create your First Bot](03.create-first-bot.md) **(11:15)**
    - Create and Manage Topics
    - Actions available in PVA
    - Test your Bot
@@ -20,4 +20,4 @@ We talk about how to create a chatbot by using Power Virtual Agent and QnA Maker
    - Integrate the Bot in a Demo Website
    - Integrate the Bot in Microsoft Teams
    - Integrate a Cognitive Service (QnA Maker) in PVA ChatBot
-4. [Q&A](08.q&a.md) **(12:25)**
+4. [Q&A] **(12:25)**
