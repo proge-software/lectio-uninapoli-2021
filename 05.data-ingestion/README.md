@@ -19,9 +19,11 @@ We talk about tools Azure provides for integrating data from multiple sources an
      - Other: IoT, Spark, Search Engines
 3. [Azure and microsoft resources](03.azure-microsoft-resources.md) :clock1230: **(00:30)**
    - Azure Resources for Data Ingestion and Analytics
+     - Azure SQL Database
      - Azure Data Factory
      - Azure Data Lake Storage
      - PowerBI
+   - Azure Synapse
    - Additional Azure Resources
    - References
    - Agenda
